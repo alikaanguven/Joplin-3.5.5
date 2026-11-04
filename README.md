@@ -1,11 +1,13 @@
 # Joplin macOS isolated instance
 
+<img src="assets/institute-dark.png" alt="Joplin Institute dark navy icon" width="128">
+
 Build a separate **native Apple Silicon Joplin 3.5.5** application with its own
 profile, a dark navy icon and one foreground Dock application. Run it alongside
 a newer personal Joplin client without Docker or Intel emulation.
 
 This is an unofficial, version-pinned packaging tool, not a Joplin fork or a
-server compatibility fix. It distributes only original build tools. Obtain
+server compatibility fix. It distributes build tools and an icon preview. Obtain
 Joplin itself from the [official 3.5.5 release](https://github.com/laurent22/joplin/releases/tag/v3.5.5).
 That release is marked as a pre-release upstream.
 
@@ -53,8 +55,9 @@ python3 build.py "/path/to/Joplin.app" --icon "/path/to/custom.icns"
 ```
 
 The default icon recolours the supplied vendor icon to RGB **4, 18, 35**
-(`#041223`), preserving its white letter and transparency. No Joplin artwork
-is included in this repository.
+(`#041223`), preserving its white letter and transparency. The README preview
+is included in `assets/institute-dark.png`; the builder generates its icon from
+the locally supplied Joplin application.
 
 ## Isolation and startup
 
@@ -136,6 +139,7 @@ keep that directory until you have exported or backed up any needed data.
 ## Licence
 
 The original build tools are available under the MIT licence in `LICENSE`.
-Joplin remains separately licensed by its authors. No Joplin binaries, artwork,
-notes, databases or credentials are distributed here. This project is not
-affiliated with the Joplin project.
+The icon preview is derived from Joplin artwork and is outside the MIT licence
+for the original build tools. Joplin remains separately licensed by its authors.
+No Joplin binaries, notes, databases or credentials are distributed here. This
+project is not affiliated with the Joplin project.
