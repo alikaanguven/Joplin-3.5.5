@@ -1,0 +1,13 @@
+.DS_Store
+.build/
+__pycache__/
+*.pyc
+dist/
+*.app/
+*.dmg
+*.DMG
+*.zip
+.env
+*.sqlite*
+*.jex
+backups/
